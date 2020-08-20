@@ -10,6 +10,7 @@ a {
 h1 {  
   font-family: Staatliches;
   font-size: 120px;
+  /*color: #24ffcf;*/
 }
 #category {
   font-family: Staatliches;
@@ -32,9 +33,20 @@ h1 {
 }
 .uk-navbar-container {
   background: #fff !important;
+  /*background: #BEBEBE;*/
   font-family: Staatliches;
+  /*color: #5dbef6;*/
 }
 img:hover {  
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+body { 
+ /*background: #5dbef6;*/
+}
+
+div {
+  border-radius: 10px;
+  font-size: 25px;
 }

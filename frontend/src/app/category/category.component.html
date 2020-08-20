@@ -9,7 +9,7 @@
           *ngFor="let article of leftArticles"
           class="uk-link-reset"
         >
-          <div class="uk-card uk-card-muted uk-background-muted uk-margin">
+          <div class="uk-card uk-card-muted uk-background-muted uk-margin uk-box-shadow-hover-large" style="border-style: solid; padding-top: 18px;">
             <div *ngIf="article.image" class="uk-card-media-top">
               <img
                 src="http://localhost:1337{{ article.image.url }}"
@@ -38,7 +38,7 @@
             *ngFor="let article of rightArticles"
             class="uk-link-reset"
           >
-            <div class="uk-card uk-card-muted uk-background-muted">
+            <div class="uk-card uk-card-muted uk-background-muted uk-box-shadow-hover-large" style="border-style: solid; padding-top: 18px;">
               <div *ngIf="article.image" class="uk-card-media-top">
                 <img
                   src="http://localhost:1337{{ article.image.url }}"

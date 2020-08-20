@@ -6,10 +6,10 @@
         <a
           routerLink="/article/{{ article.id }}"
           routerLinkActive="active"
-          *ngFor="let article of leftArticles"
+          *ngFor="let article of leftArticles.reverse()"
           class="uk-link-reset"
         >
-          <div class="uk-card uk-card-muted uk-background-muted uk-margin">
+          <div class="uk-card uk-card-muted uk-background-muted uk-margin uk-box-shadow-hover-large" style="border-style: solid; padding-top: 18px;">
             <div *ngIf="article.image" class="uk-card-media-top">
               <img
                 src="http://localhost:1337{{ article.image.url }}"
@@ -38,10 +38,10 @@
           <a
             routerLink="/article/{{ article.id }}"
             routerLinkActive="active"
-            *ngFor="let article of rightArticles"
+            *ngFor="let article of rightArticles.reverse()"
             class="uk-link-reset"
           >
-            <div class="uk-card uk-card-muted uk-background-muted">
+            <div class="uk-card uk-card-muted uk-background-muted uk-box-shadow-hover-large" style="border-style: solid;">
               <div *ngIf="article.image" class="uk-card-media-top">
                 <img
                   src="http://localhost:1337{{ article.image.url }}"
